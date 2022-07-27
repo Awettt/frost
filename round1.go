@@ -27,7 +27,7 @@ func (result *Round1Bcast) Encode() ([]byte, error) {
 	buf := &bytes.Buffer{}
 	enc := gob.NewEncoder(buf)
 	if err := enc.Encode(result); err != nil {
-		return nil, errors.Wrap(err, "couldn't encode round 1 broadcast")
+		return nil, errors.Wrap(err, "couldn't encode round  1 broadcast")
 	}
 	return buf.Bytes(), nil
 }
